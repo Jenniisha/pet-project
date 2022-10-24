@@ -1,0 +1,49 @@
+/* .uplaodform{
+    margin-left: 200px;
+    background-color: brown;
+    width: 200px;
+  } */
+
+    .uploadform {
+      /* margin-left: 200px; */
+  
+      background-color: #333;
+      float: left;
+      width: 100%;
+      padding: 50px 0;
+      justify-content: center;
+      background-color: #333;
+      color: yellow;
+  
+  
+  
+    }
+  
+    .container {
+      background:black;
+      border-radius: 10px;
+      width: 40%;
+      height: 10%;
+      justify-content: center;
+  
+  
+    }
+  
+    .white {
+      background-color: white;
+    }
+    .dhdjf{
+      margin-top: 50px;
+      margin-left: 200px;
+    }
+  
+    .btn btn-warning {
+      justify-items: center;
+    }
+  
+    .crud {
+      color: yellow;
+    }
+    .progress{
+      color:blue;
+    }

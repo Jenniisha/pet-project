@@ -1,0 +1,55 @@
+/* .mygrp{
+    width: 300px;
+    margin-left: 10px;
+    height: 60px;
+    background-color: blue;
+    color: white;
+    
+}
+.mygrp:hover{
+    background-color: white;
+    color: blue;
+    transition: 0.5s;
+    border: 1px solid blue;
+    font-size: large;
+    cursor: pointer;
+}
+.mygrp > h4 {
+   margin-top: 10px;
+   margin-left: 50px;
+
+} */
+
+.mygrp {
+    width: 300px;
+    margin-left: 10px;
+    height: 60px;
+    background-color: yellow;
+    color: black;
+
+}
+
+.mygrp:hover {
+    background-color: black;
+    color: yellow;
+    transition: 0.5s;
+    border: 1px solid black;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.mygrp>h5 {
+    margin-top: 15px;
+    margin-left: 50px;
+
+}
+
+
+.d-flex {
+    float: left;
+    width: 100%;
+    padding: 50px 0;
+    justify-content: center;
+    background-color: #333;
+    color: yellow;
+}
