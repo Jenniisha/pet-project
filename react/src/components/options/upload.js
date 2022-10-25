@@ -3,7 +3,11 @@ import { useState } from "react";
 import "./new.css";
 
 import FileUploadService from "../../service/service";
+import Footer from "../Footer";
 //import { useEffect } from 'react';
+
+
+
 function Upload({ setFile, save }) {
   const [selectedFiles, setSelectedFiles] = useState(undefined);
   const [currentFile, setCurrentFile] = useState(undefined);
@@ -48,45 +52,51 @@ function Upload({ setFile, save }) {
   };
 
   return (
-    <div className="dhdjf">
-      <center>
-        {currentFile && (
-          <div className="progress">
-            <div
-              className="progress-bar progress-bar-info progress-bar-striped"
-              role="progressbar"
-              aria-valuenow={progress}
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style={{ width: progress + "%" }}
-            >
-              {progress}%
+    <>
+      {/* <div className="UploadForm"> */}
+      <div>
+        <center>
+          {currentFile && (
+            <div className="progress">
+              <div
+                className="progress-bar progress-bar-info progress-bar-striped"
+                role="progressbar"
+                aria-valuenow={progress}
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style={{ width: progress + "%" }}
+              >
+                {progress}%
+              </div>
             </div>
-          </div>
-        )}
+          )}
+          <div className="uploadform">
+            <div className="container">
+              <div className="container">
+                <label className="btn btn-default">
+                  <input type="file" onChange={selectFile} />
+                </label>
+              </div>
+              <div>
+                <button
+                  className="btn btn-warning"
+                  disabled={!selectedFiles}
+                  onClick={upload}
+                >
+                  Upload
+                </button>
+              </div>
+            </div>
 
-        <div className="uplaodform">
-          <div>
-            {" "}
-            <label className="btn btn-default">
-              <input type="file" onChange={selectFile} />
-            </label>
-          </div>
-          <div></div>
-          <button
-            className="btn btn-success"
-            disabled={!selectedFiles}
-            onClick={upload}
-          >
-            Upload
-          </button>
-        </div>
+            <div className="alert alert-light" role="alert">
+              {message}
+            </div>
 
-        <div className="alert alert-light" role="alert">
-          {message}
-        </div>
-      </center>
-    </div>
+            <Footer />
+          </div>
+        </center>
+      </div>
+    </>
   );
 }
 

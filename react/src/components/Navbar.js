@@ -8,7 +8,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 //rafce(functional component shortcut)
 
 import Logo from "../assets/logo.png";
-import Photo_Search from "./Photo_Search";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -20,7 +19,6 @@ const Navbar = () => {
         <img src={Logo} alt="true" className="logo-img" />
       </Link>
 
-      <Photo_Search />
 
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>

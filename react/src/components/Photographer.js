@@ -118,6 +118,8 @@ const Photographer = () => {
       </div>
 
       <div>{pageType()}</div>
+      
+      <Footer/>
     </>
   );
 };

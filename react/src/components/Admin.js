@@ -76,7 +76,7 @@ function Admin() {
     <>
       <Navbar />
       <div classname="admin" style={{ marginTop: "100px" }}>
-        <Table classname="table" striped bordered hover>
+        <Table classname="table"  bordered >
           <thead>
             <tr>
               <th>ID</th>
@@ -91,7 +91,7 @@ function Admin() {
 
               <th>USERNAME</th>
 
-              <th>PASSWORD</th>
+          
 
               <th>ACTION</th>
             </tr>
@@ -113,7 +113,6 @@ function Admin() {
 
                   <td>{details.userName}</td>
 
-                  <td>{details.password}</td>
 
                   <td>
                     <button

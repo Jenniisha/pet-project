@@ -11,7 +11,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Admin from "./components/Admin";
 import Photographer from "./components/Photographer";
-import Photo_Search from "./components/Photo_Search";
+import Searchopt from "./components/search-opt";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/photographer" element={<Photographer />} />
-        <Route path="/user" element={<Photo_Search />} />
+        <Route path="/user" element={<Searchopt/>} />
       </Routes>
     </>
   );

@@ -8,7 +8,7 @@
       /* margin-left: 200px; */
   
       background-color: #333;
-      float: left;
+      /* float:left; */
       width: 100%;
       padding: 50px 0;
       justify-content: center;
@@ -32,9 +32,17 @@
     .white {
       background-color: white;
     }
-    .dhdjf{
-      margin-top: 50px;
-      margin-left: 200px;
+
+    .UploadForm
+    {
+        /* margin-top: 50px;
+        margin-left: 200px; */
+        overflow: hidden;
+        background: black;
+        border-radius: 10px;
+        width: 40%;
+        height: 10%;
+        justify-content: center;
     }
   
     .btn btn-warning {
@@ -47,3 +55,64 @@
     .progress{
       color:blue;
     }
+
+        img{
+          object-fit:fill;
+        }
+
+.card{
+  background: #333;
+}
+
+.search {
+  background-color: black;
+  color: black;
+
+}
+
+.background {
+  background: black;
+}
+
+.card {
+  background-color: black;
+  background: #333;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-size: medium;
+  color: black;
+
+
+  border-radius: 0.5rem;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+
+}
+
+img {
+
+  object-fit: fill;
+}
+
+.card-img-top {
+  object-fit: contain;
+  height: 200px;
+  /* width: 300px; */
+  object-position: center;
+
+}
+
+
+.white{
+    background-color: white;
+    color: white;
+   
+}
+
+.search {
+  background-color: black;
+  color: black;
+}
+
+.table{
+  background: black;
+}

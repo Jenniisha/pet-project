@@ -82,11 +82,11 @@ function Viewall({ setType, setDat }) {
 
   return (
     <div>
-      <Table classname="table">
+      <Table classname="table" bordered>
         {" "}
         <thead>
           <tr>
-            <th scope="col">Image Id</th>
+            <th scope="col">IMAGE ID</th>
             <th scope="col">CATEGORY</th>
             {/* <th scope="col">FILE TYPE</th> */}
             <th scope="col">CONTENT</th>
@@ -113,6 +113,7 @@ function Viewall({ setType, setDat }) {
                   >
                     Delete
                   </button>
+                  &nbsp; &nbsp;
                   <button
                     className="btn btn-primary"
                     onClick={() => {
@@ -136,6 +137,9 @@ function Viewall({ setType, setDat }) {
           </tbody>
         )}
       </Table>
+      <div className="white" text="">
+        Welcome
+      </div>
     </div>
   );
 }

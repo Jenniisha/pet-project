@@ -1,0 +1,53 @@
+.search {
+  background-color: black;
+  color: black;
+}
+.background {
+  background: black;
+}
+
+.card {
+  background-color: black;
+  background: #333;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-size: medium;
+  color: black;
+  justify-items: center;
+
+  border-radius: 0.5rem;
+  /* box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45); */
+}
+
+img {
+  object-fit: fill;
+}
+
+.card-img-top {
+  object-fit: contain;
+  height: 200px;
+  width: 300px;
+  object-position: center;
+  padding: 3px;
+}
+
+.flexUser {
+  display: inline-flex;
+}
+
+.row {
+  max-width: 100%;
+  padding-right: -14px;
+  padding-left: 59px;
+  margin-top: var(--bs-gutter-y);
+  --bs-gutter-x: -0.5rem;
+  --bs-gutter-y: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.white{
+    background-color: white;
+    color: white;
+   
+}
