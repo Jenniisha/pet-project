@@ -3,8 +3,6 @@ import { useState } from "react";
 import "./new.css";
 
 import FileUploadService from "../../service/service";
-import Footer from "../Footer";
-//import { useEffect } from 'react';
 
 
 
@@ -13,6 +11,7 @@ function Upload({ setFile, save }) {
   const [currentFile, setCurrentFile] = useState(undefined);
   const [progress, setProgress] = useState(0);
   const [message, setMessage] = useState("");
+
   // const [fileInfos, setFileInfos] = useState([]);
 
   // useEffect(() => {
@@ -36,7 +35,7 @@ function Upload({ setFile, save }) {
       (event) => {
         setProgress(Math.round((100 * event.loaded) / event.total));
       },
-      "Nature"
+      
     )
       .then((response) => {
         setMessage(response.data.message);
@@ -59,7 +58,7 @@ function Upload({ setFile, save }) {
           {currentFile && (
             <div className="progress">
               <div
-                className="progress-bar progress-bar-info progress-bar-striped"
+                className="progress-bar progress-bar-warning progress-bar-striped"
                 role="progressbar"
                 aria-valuenow={progress}
                 aria-valuemin="0"
@@ -92,7 +91,7 @@ function Upload({ setFile, save }) {
               {message}
             </div>
 
-            <Footer />
+            
           </div>
         </center>
       </div>

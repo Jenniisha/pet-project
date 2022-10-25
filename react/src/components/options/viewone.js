@@ -55,36 +55,18 @@ function Viewone({ setType }) {
             // </div>
 
             <div class="flexUser">
-              {/* <div className="col-md-9"> */}
               <div className="row">
-                {/* <div className="col-md-4 mb-4"> */}
                 <div className="card">
                   <img
                     className="card-img-top"
                     src={"/images/" + data.imageName}
-                    alt="haiii"
+                    alt="Error"
                   />
                 </div>
               </div>
             </div>
 
-            // <section class="p-4">
-            //   <div class="container">
-            //     <div class="row">
-            //       <div class="col-md-4">
-            //         <div class="card dest-card">
-            //           <div>
-            //             <img
-            //               src={"/images/" + data.imageName}
-            //               class="img-fluid dest-img"
-            //               alt=""
-            //             />
-            //           </div>
-            //         </div>
-            //       </div>
-            //     </div>
-            //   </div>
-            // </section>
+          
           );
         })}
       </div>

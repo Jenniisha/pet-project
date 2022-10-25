@@ -27,12 +27,12 @@ function Viewall({ setType, setDat }) {
     delete_im(imageId);
   };
 
-  const Dounload = (imageId) => {
+  const Download = (imageId) => {
     console.log("jhh");
-    dounload_im(imageId);
+    download_im(imageId);
   };
 
-  let dounload_im = async (imageId) => {
+  let download_im = async (imageId) => {
     let res = await axios.get(
       `http://localhost:8080/photo/download/${imageId}`,
       {
@@ -126,10 +126,10 @@ function Viewall({ setType, setDat }) {
                   {/* <button
                     className="btn btn-primary"
                     onClick={() => {
-                      Dounload(contests.imageName);
+                      Download(contests.imageName);
                     }}
                   >
-                    Dounload
+                    Download
                   </button> */}
                 </td>
               </tr>

@@ -51,6 +51,8 @@ function UserHome() {
         <option value="Nature">Nature</option>
         <option value="Wedding">Wedding</option>
         <option value="Concert">Concert</option>
+        <option value="Fashion">Fashion</option>
+        <option value="Commercial">Commercial</option>
       </select>
       <div>
         <div className="background">

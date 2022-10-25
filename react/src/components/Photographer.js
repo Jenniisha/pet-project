@@ -106,7 +106,7 @@ const Photographer = () => {
             setTypeP(2);
           }}
         >
-          My Account /
+          My Account  /
         </div>
         <div
           onClick={() => {

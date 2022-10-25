@@ -62,7 +62,7 @@ function View({ dat, setType }) {
             <img
               className="card-img-top"
               src={"/images/" + dat.imageName}
-              alt="haiii"
+              alt="Error"
             />
           </div>
         </div>
